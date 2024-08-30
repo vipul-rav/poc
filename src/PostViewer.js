@@ -19,6 +19,7 @@ export const GET_POSTS = `
 
 const rowStyles = (post, canEdit) =>
   canEdit(post) ? { cursor: "pointer", fontWeight: "bold" } : {};
+
 const PostViewer = ({ canEdit, onEdit }) => {
   const [data, setData] = useState(null);
 
