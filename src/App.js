@@ -12,8 +12,6 @@ class App extends Component {
 
   render() {
     const { auth } = this.props;
-    //if (auth.loading) return null;
-
     const { user = { name: "vipul" }, login, logout } = auth;
     const { editing } = this.state;
 
